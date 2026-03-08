@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Landing Page</title>
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="bg-white text-gray-800 dark:bg-gray-900 dark:text-gray-200">
+    <!-- Content will go here -->
+
+    <!-- Navbar -->
+    <nav
+      class="sticky top-0 bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-700 z-50"
+    >
+      <div
+        class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between"
+      >
+        <!-- Logo -->
+        <div class="text-xl font-bold">Drolip</div>
+
+        <!-- Desktop Links -->
+        <div class="hidden md:flex items-center space-x-6">
+          <a href="#" class="hover:text-blue-500">Home</a>
+          <a href="#" class="hover:text-blue-500">Features</a>
+          <a href="#" class="hover:text-blue-500">Pricing</a>
+
+          <!-- Dark mode button -->
+          <button
+            onclick="document.documentElement.classList.toggle('dark')"
+            class="px-3 py-1 border rounded"
+          >
+            🌙
+          </button>
+
+          <!-- CTA -->
+          <a
+            href="#"
+            class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
+          >
+            Get Started
+          </a>
+        </div>
+
+        <!-- Mobile Menu Icon -->
+        <button class="md:hidden text-2xl">☰</button>
+      </div>
+    </nav>
+  </body>
+</html>
